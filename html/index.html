@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dischi HTML-PHP-VUE</title>
+
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div id="root">
+        <header>
+            <a href="#"><img class="logo" src="../img/logo.png" alt="logo"></a>
+        </header>
+        
+        <main>
+            <div class="container">
+                <!-- Genero le cards dei dischi tramite un ciclo V-FOR in vue.js -->
+                <div v-for="disco in dischi" :key="disco.id" class="card">
+                    <img :src="disco.poster" :alt="disco.title">
+                    <h2>{{ disco.title }}</h2>
+                    <div>
+                        <p>{{ disco.author }}</p>
+                        <p>{{ disco.year }}</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- LINK VUEJS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- LINK AXIOS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- LINK JS -->
+    <script src="../js/script.js"></script>
+</body>
+</html>

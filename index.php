@@ -1,6 +1,6 @@
 <?php
     // Includo il file PHP contenente l'array dei dischi
-    include __DIR__ . './data_dischi.php'
+    include __DIR__ . './data_dischi.php';
 ?>
 
 <!DOCTYPE html>
