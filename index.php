@@ -27,8 +27,10 @@
                     <div class="card">
                         <img src="<?= $disco['poster'] ?>" alt="<?= $disco['title'] ?>">
                         <h2><?= $disco['title'] ?></h2>
-                        <p><?= $disco['author'] ?></p>
-                        <p><?= $disco['year'] ?></p>
+                        <div>
+                            <p><?= $disco['author'] ?></p>
+                            <p><?= $disco['year'] ?></p>
+                        </div>
                     </div> <?php
                 } ?>
         </div>

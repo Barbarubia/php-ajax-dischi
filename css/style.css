@@ -52,3 +52,8 @@ header .logo {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+
+.card p {
+    font-weight: 600;
+    color: grey;
+}
